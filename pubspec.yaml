@@ -1,0 +1,28 @@
+name: shared_prefs_issue
+description: "Demo for issue 153075"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  easy_localization:
+    git:
+      url: git@github.com:rekire/easy_localization_fork.git
+      ref: shared_preferences_fix
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/translations/
